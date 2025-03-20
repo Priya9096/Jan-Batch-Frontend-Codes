@@ -1,0 +1,29 @@
+<script>
+  {
+    var a = 10;
+    console.log("Accessing a inside block:", a);
+    a = 20;
+    console.log("After reassignment:", a);
+  }
+  console.log("Accessing a Outside block:", a);
+
+  {
+    let b = "Code";
+    console.log("Accessing b inside block:", b);
+    b = "CoderZ";
+    console.log("After reassignment b is:", b);
+  }
+  //console.log('Accessing b outside block:',b);Not Allowed
+
+  {
+    const c = 77.55;
+    console.log("Accessing c inside same block:", c);
+    //c = 30;  Reassignment not allowed
+  }
+  //console.log('Accessing c outside block',c); //Not allowed
+</script>
+
+<!--
+1.var: 
+2.let: 
+3.const : -->

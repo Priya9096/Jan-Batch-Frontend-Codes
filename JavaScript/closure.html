@@ -1,0 +1,35 @@
+<script>
+  function counter() {
+    count = 0; //Private Variable
+    return {
+      increase: () => console.log("Count is: ", ++count),
+      decrease: () => console.log("Count is: ", --count),
+      reset: () => {
+        count = 0;
+        console.log("Count is: ", count);
+      },
+    };
+  }
+  var ref = counter();
+  ref.increase();
+  ref.increase();
+  ref.increase();
+  ref.decrease();
+  ref.reset();
+  //Example : 2
+  function multiplier(count) {
+    return function (num) {
+      console.log(num * count);
+    };
+  }
+
+  var double = multiplier(2);
+  double(20);
+  double(33);
+
+  var triple = multiplier(3);
+  triple(4);
+  triple(20);
+</script>
+<!--A closure in JS is a function that remembers the variables 
+from its surrounding scope even after the scope has finished executing.-->

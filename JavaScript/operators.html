@@ -1,0 +1,36 @@
+<script>
+  var a = 10;
+  console.log(a++); //10
+  console.log(a); //11
+  console.log(++a); //12
+
+  console.log(a--); //12
+  console.log(a); //11
+  console.log(--a); //10
+
+  console.log(2 ** 2); //4
+
+  console.log(5 == "5"); //true: only values will be checked
+  console.log(5 === "5"); //false: values + data type
+  console.log("5" === "5"); //true
+
+  console.log("12" != 12); //false
+  console.log("12" !== 12); //true
+  console.log(12 !== 12); //false
+
+  console.log(true || false);
+  console.log(true && false);
+  console.log(!true);
+
+  console.log(5 != 2 ? "Hello" : "Hi");
+
+  const isEven = (number) => number % 2 == 0;
+  console.log(isEven(10));
+
+  const even = (num) => {
+    if (num % 2 == 0) {
+      return true;
+    }
+  };
+  console.log(even(10));
+</script>

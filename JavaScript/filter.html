@@ -1,0 +1,13 @@
+<script>
+  //Array Iteration Methods:
+  var arr1 = [10, 11, 12, 13, 14];
+  console.log(arr1.filter((ele) => ele % 2 == 0));
+  console.log(arr1.filter((ele) => ele % 2 != 0));
+
+  console.log(arr1.map((ele) => ele ** 2));
+
+  console.log(arr1.reduce((a, b) => a + b, 0));
+  console.log(arr1.reduce((a, b) => a * b, 1));
+
+  arr1.forEach((e, i) => console.log(e, i));
+</script>

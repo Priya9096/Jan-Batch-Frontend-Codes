@@ -1,0 +1,16 @@
+<body>
+  <p class="p1">Para 1</p>
+  <p class="p1">Para 2</p>
+</body>
+<script>
+  var target = document.querySelectorAll(".p1");
+  console.log("Before appending new ele: ", target.length);
+
+  var newele = document.createElement("p");
+  newele.classList.add("p1");
+  document.body.appendChild(newele);
+
+  console.log("After appending new element: ", target.length);
+</script>
+<!--querySelecetorAll() selects all elements that matches CSS selector
+and returns static Node List.-->

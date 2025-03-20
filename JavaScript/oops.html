@@ -1,0 +1,23 @@
+<script>
+  class Employee {
+    constructor(name, age, dep) {
+      this.name = name;
+      this.age = age;
+      this.dep = dep;
+    }
+    work() {
+      console.log(this.name, "is of age", this.age, "is working into", this.dep);
+    }
+    play() {
+      console.log(this.name, "is playing.");
+    }
+    code() {
+      console.log(this.name, "is coding");
+    }
+  }
+
+  let e1 = new Employee("Akash", 23, "Sales");
+  let e2 = new Employee("Pooja", 33, "Marketing");
+  e2.work();
+  e1.work();
+</script>

@@ -1,0 +1,26 @@
+<body>
+  <p class="p1">Para 1</p>
+  <p class="p1">Para 2</p>
+  <button onclick="addElement()">Click</button>
+</body>
+<script>
+  var toggle = true;
+  var newele;
+  function addElement() {
+    if (toggle) {
+      var target = document.getElementsByClassName("p1");
+      // console.log(target.length);
+      newele = document.createElement("p");
+      newele.classList.add("p1");
+      newele.textContent = "Para 3";
+      document.body.appendChild(newele);
+      // console.log(target.length);
+      toggle = false;
+    } else {
+      if (newele) {
+        newele.remove();
+        toggle = true;
+      }
+    }
+  }
+</script>

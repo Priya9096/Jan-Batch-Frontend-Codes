@@ -1,0 +1,31 @@
+<script>
+  a = 10;
+  console.log(a, typeof a);
+  b = 20;
+  console.log(b, typeof b);
+  console.log("Addition is", a + b);
+
+  // Create
+  let person = {
+    Name: "PK",
+    age: 27,
+    marks: [61, 96],
+    experience: {
+      ABC: 2,
+      CODE: 3,
+    },
+    study: () => console.log("Person is studying"),
+    run: () => console.log("Person is running"),
+    avg: () => console.log("Average of marks:", (61 + 96) / 2),
+  };
+  person.study();
+  person.run();
+  person.avg();
+</script>
+<!--JS is Dynamically Typed language because in js while
+declaring the variables we no need to mention the 
+data types for variables.
+
+The Data Type for variables is assigned by language at
+runtime, based on value which we have stored in it.
+-->

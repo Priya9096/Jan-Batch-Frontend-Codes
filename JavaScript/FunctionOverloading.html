@@ -1,0 +1,21 @@
+<script>
+  function mul() {
+    if (arguments.length == 0) {
+      return 0;
+    } else if (arguments.length == 1) {
+      return arguments[0];
+    } else {
+      var product = 1;
+      for (i = 0; i < arguments.length; i++) {
+        product = product * arguments[i];
+      }
+      return product;
+    }
+  }
+  console.log(mul());
+  console.log(mul(10, 20));
+  console.log(mul(10, 20, 30));
+</script>
+<!--
+1.arguments object wont support array methods like filter, map and reduce etc.
+2.arguments object are not supported by arrow function.-->

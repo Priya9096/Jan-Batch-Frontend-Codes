@@ -1,0 +1,23 @@
+<body>
+  <button id="btn">Click</button><br /><br />
+  <button id="btn1">DblClick</button><br /><br />
+  <button id="btn2">OnMouseOver</button><br /><br />
+</body>
+<script>
+  var target = document.getElementById("btn");
+  target.addEventListener("click", () => {
+    alert("Button Clicked..!!");
+  });
+
+  document.getElementById("btn1").addEventListener("dblclick", () => {
+    confirm("Do you want to submit this form ?");
+  });
+
+  document.getElementById("btn2").addEventListener("mouseover", () => {
+    prompt("Enter your Name");
+  });
+
+  document.addEventListener("keyup", (event) => {
+    console.log(`Key Pressed: ${event.key}`);
+  });
+</script>

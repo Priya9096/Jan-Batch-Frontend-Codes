@@ -1,0 +1,45 @@
+<script>
+  let arr = [10, 20, 30, 40, 50];
+  //for loop is helps us to iterate through an iterable
+  //object like array.
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+
+  //forEach() is a method which will help us to iterate
+  //through an iterable object like array.
+  arr.forEach((ele) => console.log(ele));
+
+  //WAC to print numbers from 1-5 using while loop:
+  var a = 1;
+  while (a < 6) {
+    console.log(a);
+    a++;
+  }
+
+  //WAC to print numbers from 1-5 using do-while loop:
+  var b = 1;
+  do {
+    console.log(b);
+    b++;
+  } while (b < 6);
+
+  //WAC to print numbers from 1-5 but if number is 3
+  //dont print it:
+  for (var c = 1; c < 6; c++) {
+    if (c == 3) {
+      continue;
+    } else {
+      console.log(c);
+    }
+  }
+  //WAC to print numbers from 1-5 but if number is 4
+  //stop printing.
+  for (var c = 1; c < 6; c++) {
+    if (c == 3) {
+      break;
+    } else {
+      console.log(c);
+    }
+  }
+</script>

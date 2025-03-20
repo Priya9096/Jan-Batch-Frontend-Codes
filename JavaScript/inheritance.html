@@ -1,0 +1,29 @@
+<script>
+  class Product {
+    constructor(name, price) {
+      this.name = name;
+      this.price = price;
+    }
+    displayInfo() {
+      console.log(`${this.name} costs ${this.price}`);
+    }
+  }
+
+  class Book extends Product {
+    constructor(name, price, author, date) {
+      super(name, price);
+      this.author = author;
+      this.date = date;
+    }
+
+    displayInfo() {
+      super.displayInfo();
+      console.log("Author is:", this.author, "Published Date: ", this.date);
+    }
+  }
+  let b1 = new Book("ABC", 60, "AK", "12th- Feb");
+  b1.displayInfo();
+
+  let b2 = new Book("Python", 4000, "John", "13th-Feb");
+  b2.displayInfo();
+</script>
